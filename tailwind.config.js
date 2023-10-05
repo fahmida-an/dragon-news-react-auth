@@ -6,6 +6,9 @@ export default {
      dark1: '#706F6F',
      dark2: '#403F3F',
      dark3: '#9F9F9F',
+     pink1: '#D72050',
+     white: '#FFFFFF',
+     gray: '#F3F3F3',
     },
 
     extend: {
