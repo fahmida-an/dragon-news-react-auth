@@ -9,6 +9,7 @@ export default {
      pink1: '#D72050',
      white: '#FFFFFF',
      gray: '#F3F3F3',
+     blue: '#1fb6ff'
     },
 
     extend: {
