@@ -13,7 +13,7 @@ const RightSideBar = () => {
   return (
     <div>
       <div className="p-4">
-        <h2 className="mt-3 mb-8 mx-3 font-bold text-2xl">Login With</h2>
+        <h2 className="mt-3 mb-8 font-bold text-2xl">Login With</h2>
         <button className="btn btn-outline w-full mb-3 hover:border-blue hover:bg-white hover:text-blue">
           <FaGoogle></FaGoogle>
           Login With Google
@@ -25,7 +25,7 @@ const RightSideBar = () => {
       </div>
 
       <div className="p-4">
-        <h2 className="my-8 text-2xl font-bold mx-3">Find Us On</h2>
+        <h2 className="my-8 text-2xl font-bold ">Find Us On</h2>
         <a
           className="flex items-center p-4 text-lg border rounded-t-lg"
           href=""
@@ -49,7 +49,7 @@ const RightSideBar = () => {
       </div>
 
       <div className="p-4 space-y-3 mt-8">
-        <h2 className="text-2xl font-bold mx-3">Q Zone</h2>
+        <h2 className="text-2xl font-bold">Q Zone</h2>
         <img className="mx-aut0" src={qzone1} alt="" />
 
         <img className="mx-auto" src={qzone2} alt="" />
