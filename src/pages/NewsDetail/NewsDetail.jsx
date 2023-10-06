@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Header from "../Shared/Header/Header";
 import { useEffect, useState } from "react";
 import RightSideBar from "../Shared/RightSideBar/RightSideBar";
+import Navbar from "../Shared/Navbar/Navbar";
 
 const NewsDetail = () => {
   const [newsCard, setNewsCard] = useState({});
@@ -16,6 +17,7 @@ const NewsDetail = () => {
   return (
     <div>
       <Header></Header>
+      <Navbar></Navbar>
 
       <div className="grid grid-cols-4">
       <div className="col-span-3">
