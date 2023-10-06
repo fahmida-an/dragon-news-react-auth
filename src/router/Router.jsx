@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom"
 import Home from '../pages/Home/Home'
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
+import NewsDetail from '../pages/NewsDetail/NewsDetail';
 
 const router = new createBrowserRouter([
     {
@@ -11,7 +12,13 @@ const router = new createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader:()=> fetch('/news.json')
+            },
+            {
+                path: '/news/:id',
+                element: <NewsDetail></NewsDetail>,
+                loader: () => fetch('/news.json')
             },
             {
                 path: "/login",
@@ -20,7 +27,7 @@ const router = new createBrowserRouter([
             {
                 path: "/register",
                 element: <Register></Register>
-            }
+            },
         ]
 
     }
